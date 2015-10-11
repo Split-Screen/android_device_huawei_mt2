@@ -9,7 +9,7 @@
 #/*mount log-partition first, then logserver can save storage-diagnose-log to storage.log */
 /dev/block/platform/msm_sdcc.1/by-name/boot       /boot       emmc    defaults                                            defaults
 /dev/block/platform/msm_sdcc.1/by-name/recovery   /recovery   emmc    defaults                                            defaults
-/dev/block/platform/msm_sdcc.1/by-name/system     /system     ext4    ro  
+/dev/block/platform/msm_sdcc.1/by-name/system     /system     ext4    ro                                                  wait
 /dev/block/platform/msm_sdcc.1/by-name/system     /system     f2fs    ro                                                  wait
 /dev/block/platform/msm_sdcc.1/by-name/cache      /cache      ext4    noatime,nosuid,nodev                                wait,check
 /dev/block/platform/msm_sdcc.1/by-name/cache      /cache      f2fs    noatime,nosuid,nodev,inline_xattr                   wait,check
